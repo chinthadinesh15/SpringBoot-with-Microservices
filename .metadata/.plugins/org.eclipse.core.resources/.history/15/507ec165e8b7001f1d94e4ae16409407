@@ -1,0 +1,10 @@
+package in.Dinesh.userDefinedException;
+
+
+public class NoUserFoundException extends RuntimeException
+{
+	public NoUserFoundException(Integer pid)
+	{
+		super(pid);
+	}
+}

@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: 21-Server_Registry

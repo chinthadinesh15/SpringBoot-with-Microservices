@@ -1,0 +1,5 @@
+package in.Dinesh.controller;
+
+public interface BookRepository {
+
+}

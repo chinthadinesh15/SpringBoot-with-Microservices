@@ -1,0 +1,20 @@
+package in.Dinesh.controller;
+
+import org.springframework.web.bind.annotation.PathVariable;
+
+import in.Dinesh.exception.ProductNotFoundEception;
+
+public class ProductController 
+{
+	public String getProduct(@PathVariable("pid") Integer pid)
+	{
+		if(pid>100)
+		{
+			return "Product Available";
+		}
+		else
+		{
+			throw new ProductNotFoundEception("Invalid product id");
+		}
+	}
+}

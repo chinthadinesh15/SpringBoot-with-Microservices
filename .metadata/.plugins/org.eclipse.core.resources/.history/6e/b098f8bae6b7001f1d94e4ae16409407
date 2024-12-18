@@ -1,0 +1,16 @@
+package in.Dinesh.exception;
+
+import java.time.LocalDateTime;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class AppExInfo 
+{
+	private String exCode;
+	private String exMsg;
+	private LocalDateTime exDate;
+
+}

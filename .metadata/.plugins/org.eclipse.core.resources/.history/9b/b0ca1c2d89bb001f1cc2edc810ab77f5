@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: 27-Config-Client-App

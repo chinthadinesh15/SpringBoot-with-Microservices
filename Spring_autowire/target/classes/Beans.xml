@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- byName-->
+  <!--  <bean id="eng" class="in.Dinesh.beans.DisealEngine"></bean>
+   <bean id="eng2" class="in.Dinesh.beans.PetroelEngine"></bean>
+    <bean id="car" class="in.Dinesh.beans.Car"  autowire="byName">
+    </bean> -->
+    
+    <!-- byType-->
+   <!-- <bean id="eng" class="in.Dinesh.beans.DisealEngine" autowire-candidate="false"></bean>
+    <bean id="eng2" class="in.Dinesh.beans.PetroelEngine"></bean>
+    <bean id="car" class="in.Dinesh.beans.Car"  autowire="byType">
+    </bean>-->
+    
+     <!-- byType-->
+     <!--<bean id="eng" class="in.Dinesh.beans.DisealEngine"></bean>
+     <bean id="eng2" class="in.Dinesh.beans.PetroelEngine"  primary="true"></bean>
+     <bean id="car" class="in.Dinesh.beans.Car"  autowire="byType">
+     </bean> -->
+     
+      <!-- byConstructor-->
+     
+     <bean id="eng" class="in.Dinesh.beans.DisealEngine" primary="true"></bean>
+     <bean id="eng2" class="in.Dinesh.beans.PetroelEngine" ></bean>
+     <bean id="car" class="in.Dinesh.beans.Car"  autowire="constructor">
+    
+     </bean> 
+     
+     
+ 
+</beans>

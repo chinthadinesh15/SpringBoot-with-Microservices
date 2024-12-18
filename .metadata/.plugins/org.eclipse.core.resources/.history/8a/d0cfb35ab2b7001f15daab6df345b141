@@ -1,0 +1,53 @@
+package in.Dinesh.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import in.Dinesh.bindings.Passenger;
+import in.Dinesh.bindings.Ticket;
+import in.Dinesh.service.MakeMyTripService;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+
+@Controller
+public class MakeMyTripController 
+{
+	@Autowired
+	private MakeMyTripService service;
+	
+	
+	
+	
+	@PostMapping("/ticket")
+	public String ticketBooking(Passenger p,Model model)
+	{
+		Ticket bookTicket = service.bookTicket(p);
+		model.addAttribute("msg","Your Ticket Booked!!!");
+		
+		return"bookTicket";
+	}
+	
+	@GetMapping("/book-ticket")
+	public String bookTicket(Model model)
+	{
+		model.addAttribute("p",new Passenger());
+		
+		return "bookTicket";
+	}
+	
+	@GetMapping("/")
+	public String index(Model model)
+	{
+		List<Ticket> allTickets = service.getAllTickets();
+		
+		model.addAttribute("tickets",allTickets);
+		
+		return "index";
+	}
+
+}

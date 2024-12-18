@@ -1,0 +1,15 @@
+package in.Dinesh.rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetRestController 
+{
+	public String greetGetmsg()
+	{
+		String msg="Good night!!!";
+		
+		return msg;
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;09-Spring-ExceptionHandling_Global/src/main/resources/templates/error.html&apos; to &apos;errorView.html&apos;" description="Rename resource &apos;error.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/error.html" name="errorView.html" stamp="1733755761211" updateReferences="true"/>
+</session>

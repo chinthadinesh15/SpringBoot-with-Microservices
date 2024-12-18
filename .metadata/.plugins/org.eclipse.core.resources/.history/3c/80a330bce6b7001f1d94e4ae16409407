@@ -1,0 +1,11 @@
+package in.Dinesh.exception;
+
+public class ProductNotFoundEception 
+{
+	public ProductNotFoundEception(String pid) 
+	{
+		super(pid);
+		// TODO Auto-generated constructor stub
+	}
+
+}

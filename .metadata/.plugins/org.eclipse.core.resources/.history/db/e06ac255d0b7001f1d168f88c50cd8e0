@@ -1,0 +1,11 @@
+package in.Dinesh.binding;
+
+import java.util.List;
+
+
+public interface MakeMyTripService 
+{
+	public Ticket bookTicket(Passenger p);
+
+	public List<Ticket> getAllTickets();
+}

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: 22-Admin-Server
+
+server:
+  port: 9090

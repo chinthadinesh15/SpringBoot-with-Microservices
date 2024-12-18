@@ -1,0 +1,5 @@
+package in.Dinesh.config;
+
+public class RedisConfig {
+
+}

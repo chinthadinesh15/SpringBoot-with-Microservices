@@ -1,0 +1,20 @@
+package in.Dinesh.userDefinedException;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class UserController 
+{
+	public String getNameByid(Integer uid)
+	{
+		if(uid<=100)
+		{
+			return "Dinesh";
+		}
+		else
+		{
+			return "Not Found";
+		}
+	}
+
+}

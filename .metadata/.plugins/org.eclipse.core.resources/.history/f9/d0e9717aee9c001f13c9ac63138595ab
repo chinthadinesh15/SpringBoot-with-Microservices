@@ -1,0 +1,14 @@
+package in.Dinesh.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import in.Dinesh.entity.Employee;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> 
+{
+	List<Employee> findByEmpSalaryGreaterThan(Double empSalary);
+	
+
+}

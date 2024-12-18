@@ -1,0 +1,13 @@
+package in.Dinesh.binding;
+
+public class Ticket 
+{
+	private String name;
+	private String email;
+	private String from;
+	private String to;
+	private String doj;
+	private String trainNum;
+	private String status;
+
+}
